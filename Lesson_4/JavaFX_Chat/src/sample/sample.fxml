@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?scenebuilder-stylesheet /css/Styles.css?>
+
+<VBox alignment="center" prefHeight="486.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <stylesheets><URL value="@/css/Styles.css" /> </stylesheets>
+    <ListView fx:id="listView" VBox.vgrow="ALWAYS" />
+    <HBox fx:id="controlPane" prefHeight="54.0" prefWidth="248.0">
+        <TextField fx:id="textField" onAction="#sendMsg" prefHeight="73.0" prefWidth="208.0" promptText="Введите сообщение..." HBox.hgrow="ALWAYS" />
+        <ImageView fx:id="sendButton" fitHeight="52.0" fitWidth="40.0" onMouseClicked="#sendMessage">
+
+                <Image url="/img/send.png" />
+
+        </ImageView>
+    </HBox>
+</VBox>
