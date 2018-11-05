@@ -26,3 +26,10 @@
     -fx-border-color: white, white;
 }
 
+#send {
+ -fx-background-image: url(/img/send.png);
+}
+
+#send:hover {
+    -fx-background-image: url(/img/send2.png);
+}
